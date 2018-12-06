@@ -1,0 +1,78 @@
+/* pages/collect/collect.wxss */
+
+page {
+  background-color: #f5f5f5;
+}
+
+.article-list-box {
+  padding: 0 0 0 0;
+}
+
+.article-box {
+  padding: 10rpx 30rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-top: 10rpx solid #f5f5f5;
+}
+
+.article-box .article-top {
+  display: flex;
+  align-items: center;
+}
+
+.article-box .head {
+  background-color: #ff8635;
+  border-radius: 50%;
+  width: 30rpx;
+  height: 30rpx;
+  font-size: 20rpx;
+  text-align: center;
+  color: #fff;
+}
+
+.article-box .name {
+  font-size: 22rpx;
+  color: #333;
+  flex: 1;
+  margin-left: 10rpx;
+}
+
+.article-box .type {
+  color: #666;
+  font-size: 22rpx;
+}
+
+.article-box .title {
+  display: block;
+  font-size: 26rpx;
+  color: #222;
+  line-height: 40rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 15rpx;
+}
+
+.article-box .desc {
+  display: -webkit-box;
+  font-size: 22rpx;
+  color: #999;
+  line-height: 40rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 10rpx;
+}
+
+.article-box .icon {
+  flex: 1;
+  vertical-align: middle;
+}
+
+.article-box .time {
+  font-size: 22rpx;
+  color: #666;
+  vertical-align: middle;
+}

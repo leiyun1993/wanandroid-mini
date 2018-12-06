@@ -1,0 +1,7 @@
+<!--pages/login/login.wxml-->
+<view class='login'>
+   <input class='text-input' placeholder="请输入用户名" value='{{username}}' bindinput='onNameChange'></input>
+   <input class='text-input' placeholder="请输入密码" value='{{password}}' password="true" bindinput='onPwdChange'></input>
+   <view class='login-btn' bindtap='login'>登录</view>
+</view>
+

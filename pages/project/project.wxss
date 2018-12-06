@@ -1,0 +1,139 @@
+/* pages/project/project.wxss */
+
+page {
+  background-color: #fff;
+}
+
+.nav {
+  width: 750rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background: #fff;
+  -moz-box-shadow: 0px 4px 10rpx #ccc;
+  -webkit-box-shadow: 0px 4px 10rpx #ccc;
+  box-shadow: 0px 4px 10rpx #ccc;
+}
+
+.nav-item {
+  padding: 15rpx 0;
+  margin: 0 30rpx;
+  font-size: 26rpx;
+  color: #666;
+  display: inline-block;
+}
+
+.active {
+  border-bottom: 5rpx solid #222;
+  color: #222;
+}
+
+.project-list-box {
+  padding: 66rpx 0 0 0;
+}
+
+.project-box {
+  margin: 20rpx 15rpx;
+  padding: 15rpx;
+  -moz-box-shadow: 0px 0px 10px #ccc;
+  -webkit-box-shadow: 0px 0px 10px #ccc;
+  box-shadow: 0px 0px 10px #ccc;
+  background-color: #fff;
+  border-radius: 8rpx;
+}
+
+.project-box .box-top{
+display: flex;
+}
+
+.project-left{
+  flex: 1;
+}
+
+.project-right{
+  flex: 1;
+  box-sizing: border-box;
+}
+.project-box .user_name{
+  display:flex;
+  align-items:center;
+}
+
+.user_name .head {
+  background-color: #ff8635;
+  border-radius: 50%;
+  width: 30rpx;
+  height: 30rpx;
+  font-size: 20rpx;
+  text-align: center;
+  color: #fff;
+}
+
+.user_name .name {
+  font-size: 22rpx;
+  color: #333;
+  flex: 1;
+  margin-left: 10rpx;
+}
+
+.project-box .title {
+  display: -webkit-box;
+  font-size: 26rpx;
+  color: #222;
+  line-height: 40rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 10rpx;
+}
+.project-box .desc {
+  display: -webkit-box;
+  font-size: 22rpx;
+  color: #999;
+  line-height: 40rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 10rpx;
+}
+
+.project-box .project-img{
+  width: 320rpx;
+  margin-left: 30rpx;
+  height: 180rpx;
+  -moz-box-shadow: 0px 0px 10px #ccc;
+  -webkit-box-shadow: 0px 0px 10px #ccc;
+  box-shadow: 0px 0px 10px #ccc;
+  border-radius: 8rpx;
+}
+
+.project-box .icon {
+  vertical-align: middle;
+}
+
+.project-box .time {
+  font-size: 22rpx;
+  color: #666;
+  vertical-align: middle;
+}
+
+.project-box .article-top {
+  display: flex;
+  align-items: center;
+  margin-top: 10rpx;
+}
+
+.project-box .type {
+  color: #666;
+  font-size: 22rpx;
+  flex: 1;
+  margin-left: 10rpx;
+}

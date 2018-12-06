@@ -1,0 +1,36 @@
+<!--pages/search/search.wxml-->
+<view class="weui-search-bar">
+  <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input" placeholder="快速查找" value="{{inputVal}}" bindinput="inputTyping" />
+      <view class="weui-icon-clear" bindtap="clearInput">
+        <icon type="clear" size="14" wx:if="{{inputVal.length>0}}"></icon>
+      </view>
+    </view>
+  </view>
+  <view class="weui-search-bar__cancel-btn" bindtap="searchClick">搜索</view>
+</view>
+<view class='article-list-box'>
+  <view class='tips-title' wx:if="{{tipsList.length>0}}">大家都在搜</view>
+  <view class='tips-box' wx:if="{{tipsList.length>0}}">
+    <view class='tips-tag' wx:for="{{tipsList}}" wx:key="index" data-key='{{item.name}}' bindtap='onHotKeyClick'>{{item.name}}</view>
+  </view>
+  <view class='article-box' wx:for="{{articleList}}" wx:key="index" data-url='{{item.link}}' bindtap='onItemClick'>
+    <view class='article-top'>
+      <view class='head'>{{item.headTetx}}</view>
+      <view class='name'>{{item.author}}</view>
+      <view class='type'>{{item.chapterName}}/{{item.superChapterName}}</view>
+    </view>
+    <rich-text class='title' nodes="{{item.title}}"></rich-text>
+    <view class='desc'>{{item.desc?item.desc:item.link}}</view>
+    <view class='article-top' style='margin-top:20rpx;'>
+      <icon class='icon' type='success' size='22rpx' color='#666'></icon>
+      <view class='time'>{{item.niceDate}}</view>
+    </view>
+  </view>
+</view>
+<view class="weui-loadmore" wx:if="{{isLoadingMore}}">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore__tips">正在加载</view>
+</view>

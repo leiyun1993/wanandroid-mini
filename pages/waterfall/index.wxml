@@ -1,0 +1,33 @@
+<!--pages/waterfall/index.wxml-->
+
+
+<scroll-view scroll-y="true" style="height:{{scrollH}}px" bindscrolltolower="loadImages">
+  <view class='water-fall'>
+    <view style="width:100%">
+      <view class="item">
+        <view wx:for="{{note}}" wx:if="{{index%2==0}}">
+          <image class='img' mode='widthFix' lazy-load="true" src='{{item.url}}'></image>
+          <text>{{item.desc}}{{index}}</text>
+        </view>
+      </view>
+      <view class="item">
+        <view wx:for="{{note}}" wx:if="{{index%2==1}}">
+          <image class='img' mode='widthFix' lazy-load="true" src='{{item.url}}'></image>
+          <text>{{item.desc}}{{index}}</text>
+
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+
+
+
+<!-- <view class='case-page'>
+  <view class='list-masonry'>
+    <view class='item-masonry' wx:for="{{note}}">
+      <image src='{{item.url}}' mode='widthFix'></image>
+      <text>{{item.title}}{{index}}</text>
+    </view>
+  </view>
+</view> -->

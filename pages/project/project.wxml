@@ -1,0 +1,32 @@
+<!--pages/project/project.wxml-->
+<scroll-view scroll-x class="nav">
+  <block wx:for="{{projects}}" wx:key="index">
+    <view class="nav-item {{currentTab == index ?'active':''}}" data-index='{{index}}' bindtap='onTabClick'>{{item.name}}</view>
+  </block>
+</scroll-view>
+<view class='project-list-box'>
+  <view class='project-box' wx:for="{{projectList}}" wx:key="index" data-url='{{item.link}}' bindtap='onItemClick'>
+    <view class='box-top'>
+      <view class='project-left'>
+        <view class='user_name'>
+          <view class='head'>{{item.headTetx}}</view>
+          <view class='name'>{{item.author}}</view>
+        </view>
+        <view class='title'>{{item.title}}</view>
+        <view class='desc'>{{item.desc}}</view>
+      </view>
+      <view class='project-right'>
+        <image class='project-img' mode='aspectFill' src='{{item.envelopePic}}'></image>
+      </view>
+    </view>
+    <view class='article-top'>
+      <icon class='icon' type='success' size='22rpx' color='#666'></icon>
+      <view class='type'>{{item.chapterName}}/{{item.superChapterName}}</view>
+      <view class='time'>{{item.niceDate}}</view>
+    </view>
+  </view>
+</view>
+<view class="weui-loadmore" wx:if="{{isLoadingMore}}">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore__tips">正在加载</view>
+</view>

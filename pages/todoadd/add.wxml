@@ -1,0 +1,15 @@
+<!--pages/todoadd/add.wxml-->
+<view class='todo'>
+  <view class='title'>待办标题：</view>
+  <input class='text-input' value='{{title}}' bindinput='onTitleChange'></input>
+  <view class='title'>待办详情：</view>
+  <view>
+    <textarea class='text-content-input' value='{{content}}' bindinput='onContentChange'></textarea>
+  </view>
+  <view class='title'>时间：</view>
+  <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+    <view class='text-time'>{{date}}</view>
+  </picker>
+
+  <view class='add-btn' bindtap='submit'>立即添加</view>
+</view>

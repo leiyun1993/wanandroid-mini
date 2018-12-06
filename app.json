@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/article/article",
+    "pages/project/project",
+    "pages/me/me",
+    "pages/web/index",
+    "pages/collect/collect",
+    "pages/login/login",
+    "pages/search/search",
+    "pages/todo/todo",
+    "pages/todoadd/add",
+    "pages/waterfall/index",
+    "pages/tree/tree",
+    "pages/treelist/treelist"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "玩安卓Mini",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#222",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/ic_home.png",
+        "selectedIconPath": "/images/ic_home_fill.png"
+      },
+      {
+        "pagePath": "pages/article/article",
+        "text": "文章",
+        "iconPath": "/images/ic_article.png",
+        "selectedIconPath": "/images/ic_article_fill.png"
+      },
+      {
+        "pagePath": "pages/project/project",
+        "text": "项目",
+        "iconPath": "/images/ic_category.png",
+        "selectedIconPath": "/images/ic_category_fill.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "/images/ic_me.png",
+        "selectedIconPath": "/images/ic_me_fill.png"
+      }
+    ]
+  }
+}

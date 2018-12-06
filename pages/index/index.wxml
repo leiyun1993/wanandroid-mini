@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="weui-search-bar" bindtap='searchBarClick'>
+  <view class="weui-search-bar__form">
+    <icon class="weui-icon-search" type="search" size="14"></icon>
+    <text class="weui-search-bar__text">搜索</text>
+  </view>
+</view>
+<view class='banner-box'>
+  <swiper indicator-dots="true" autoplay='true' interval='4000' duration='500' circular='true'>
+    <swiper-item wx:for="{{bannerList}}" wx:key="index">
+      <image class='banner-image' src="{{item.imagePath}}" data-url='{{item.url}}' bindtap='onItemClick'></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class='article-box' wx:for="{{articleList}}" wx:key="index" data-url='{{item.link}}' bindtap='onItemClick'>
+    <view class='article-top'> 
+      <view class='head'>{{item.headTetx}}</view>
+      <view class='name'>{{item.author}}</view>
+      <view class='type'>{{item.chapterName}}/{{item.superChapterName}}</view>
+    </view>
+    <view class='title'>{{item.title}}</view>
+    <view class='desc'>{{item.desc?item.desc:item.link}}</view>
+    <view class='article-top' style='margin-top:20rpx;'>
+      <icon class='icon' type='success' size='22rpx' color='#666'></icon>
+      <view class='time'>{{item.niceDate}}</view>
+    </view>
+</view>
+<view class="weui-loadmore" wx:if="{{isLoadingMore}}">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore__tips">正在加载</view>
+</view>

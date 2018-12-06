@@ -1,0 +1,26 @@
+/* pages/login/login.wxss */
+.login{
+  text-align: center;
+  margin-top: 30%;
+}
+
+.text-input{
+  width: 80%;
+  height: 80rpx;
+  border-bottom: 1rpx solid #222;
+  display: inline-block;
+  text-align: left;
+  font-size: 28rpx;
+  color: #222;
+}
+
+.login-btn{
+  width: 80%;
+  padding: 10rpx 0;
+  background-color: #222;
+  border-radius: 40rpx;
+  color: #fff;
+  display: inline-block;
+  margin-top: 30rpx;
+  font-size: 28rpx;
+}

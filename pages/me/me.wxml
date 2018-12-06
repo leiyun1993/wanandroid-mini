@@ -1,0 +1,31 @@
+<!--pages/me/me.wxml-->
+<view class="login">
+  <view>
+    <image src="{{'../../images/head_def.png'}}" mode="aspectFill"></image>
+    <button plain="false" wx:if="{{!userInfo}}" bindtap="onGotUserInfo">登录/注册</button>
+    <text>{{userInfo.username}}</text>
+  </view>
+</view>
+<view class='list-item' bindtap='onItemClick' data-item-type='0'>
+  <image class='list-item-img' src='../../images/collect.png'></image>
+  <view class='list-item-name' style='flex:1;'>我的收藏</view>
+  <image class='list-item-img'  src='../../images/ic_arrow.png'></image>
+</view>
+<view class='line-box'><view class='bottom-line'></view></view>
+<view class='list-item' bindtap='onItemClick' data-item-type='1'>
+  <image class='list-item-img' src='../../images/ic_knowledge_system.png'></image>
+  <view class='list-item-name' style='flex:1;'>知识体系</view>
+  <image class='list-item-img'  src='../../images/ic_arrow.png'></image>
+</view>
+<view class='line-box'><view class='bottom-line'></view></view>
+<view class='list-item' bindtap='onItemClick' data-item-type='2'>
+  <image class='list-item-img' src='../../images/ic_todo.png'></image>
+  <view class='list-item-name' style='flex:1;'>待办清单</view>
+  <image class='list-item-img'  src='../../images/ic_arrow.png'></image>
+</view>
+
+<view class='list-item top-20' bindtap='onItemClick' data-item-type='3'>
+  <image class='list-item-img' src='../../images/about.png'></image>
+  <view class='list-item-name' style='flex:1;'>关于我们</view>
+  <image class='list-item-img'  src='../../images/ic_arrow.png'></image>
+</view>

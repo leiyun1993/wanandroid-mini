@@ -1,0 +1,16 @@
+<!--pages/treelist/treelist.wxml-->
+<view class='article-list-box'>
+  <view class='article-box' wx:for="{{articleList}}" wx:key="index" data-url='{{item.link}}' bindtap='onItemClick'>
+    <view class='article-top'>
+      <view class='head'>{{item.headTetx}}</view>
+      <view class='name'>{{item.author}}</view>
+      <view class='type'>{{item.chapterName}}</view>
+    </view>
+    <view class='title'>{{item.title}}</view>
+    <view class='desc'>{{item.desc?item.desc:item.link}}</view>
+    <view class='article-top' style='margin-top:20rpx;'>
+      <icon class='icon' type='success' size='22rpx' color='#666'></icon>
+      <view class='time'>{{item.niceDate}}</view>
+    </view>
+  </view>
+</view>

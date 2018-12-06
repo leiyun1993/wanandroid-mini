@@ -1,0 +1,31 @@
+<!--pages/todo/todo.wxml-->
+<view class='type-bar'>
+  <view class='item'>
+    <view class='title {{currTab==1?"active":""}}' bindtap='onTabItemClick' data-tab='1'>待办列表</view>
+  </view>
+  <view class='item'>
+    <view class='title {{currTab==2?"active":""}}' bindtap='onTabItemClick' data-tab='2'>已完成</view>
+  </view>
+</view>
+
+<view wx:for="{{todoList}}" wx:key="index" class='scroll-box' style='left:{{item.leftDis}}' bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-sid='{{index}}'>
+  <view class='content-box'>
+    <view class='todo-box' data-index='{{index}}' bindtap='onOpenClick' style='margin-right:{{item.rightPadding}}'>
+      <view class='left-tips {{currTab==2?"green":""}}'></view>
+      <view class='info-box'>
+        <view class='time'>{{item.dateStr}}</view>
+        <view class='time' wx:if="{{item.completeDateStr}}">完成时间:{{item.completeDateStr}}</view>
+        <view class='title'>{{item.title}}</view>
+      </view>
+      <image class='arrow {{item.isOpen?"open":""}}' src='../../images/ic_arrow_down.png'></image>
+    </view>
+    <view class='{{currTab==2?"content-green":"content"}}' hidden='{{!item.isOpen}}'>{{item.content}}</view>
+  </view>
+
+  <view class='delete' catchtap='deleteTab' data-sid='{{index}}'>
+    <view class='item1' bindtap='onItem1Click' data-id='{{item.id}}'>删除</view>
+    <view class='item2' bindtap='onItem2Click' data-id='{{item.id}}'>{{currTab==2?"撤回":"完成"}}</view>
+  </view>
+</view>
+
+<button class='add' hidden='{{currTab==2}}' bindtap='onAddClick'>+</button>

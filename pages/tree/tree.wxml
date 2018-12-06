@@ -1,0 +1,7 @@
+<!--pages/tree/tree.wxml-->
+<block wx:for="{{treeList}}" wx:key="index">
+  <view class='tips-title'>{{item.name}}</view>
+  <view class='tips-box'>
+    <view class='tips-tag' wx:for="{{item.children}}" wx:key="index" data-name='{{item.name}}' data-key='{{item.id}}' bindtap='onHotKeyClick'>{{item.name}}</view>
+  </view>
+</block>
