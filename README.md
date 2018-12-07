@@ -10,19 +10,19 @@
  
 ## 项目截图
 
-![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/1.png)
-![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/2.png)
-![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/3.png)
-![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/4.png)
-![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/5.png)
-![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/6.png)
-![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/7.png)
-![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/8.png)
-![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/9.png)
-![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/10.png)
-![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/11.png)
-![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/12.png)
-![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/13.png)
+![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/1.jpg)
+![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/2.jpg)
+![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/3.jpg)
+![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/4.jpg)
+![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/5.jpg)
+![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/6.jpg)
+![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/7.jpg)
+![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/8.jpg)
+![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/9.jpg)
+![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/10.jpg)
+![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/11.jpg)
+![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/12.jpg)
+![image](https://github.com/leiyun1993/wanandroid-mini/raw/master/screenshot/13.jpg)
 
 ## 部分功能解析
 
