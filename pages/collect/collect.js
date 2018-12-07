@@ -41,18 +41,10 @@ Page({
   },
 
   onItemClick(event){
-    wx.showToast({
-      title: '4554455',
-      duration:10*1000,
+    let url = event.currentTarget.dataset.url;
+    wx.navigateTo({
+      url: "/pages/web/index?url=" + encodeURIComponent(url)
     })
-
-    setTimeout(()=>{
-      wx.navigateBack({
-        delta: 1,
-      })
-
-    },1000)
-    
   },
 
   /**
