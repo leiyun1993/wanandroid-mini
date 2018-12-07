@@ -44,6 +44,12 @@ App({
       })
     }
   },
+  isLogin(){
+    if(wx.getStorageSync("cookie")){
+      return true;
+    }
+    return false;
+  },
   globalData: {
     userInfo: null
   }

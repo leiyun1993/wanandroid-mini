@@ -24,7 +24,8 @@ Page({
     api.IGetCollectList(page)
       .then(res => {
         for (let item of res.data.datas) {
-          item.headTetx = item.author.substring(0, 1)
+          item.headTetx = item.author.substring(0, 1);
+          item.collect = true;
         }
         wx.stopPullDownRefresh()
         this.setData({
@@ -107,5 +108,28 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  collectClick(event) {
+    let id = event.currentTarget.dataset.id;
+    let zan = event.currentTarget.dataset.zan;
+    let index = event.currentTarget.dataset.index;
+    let originId = event.currentTarget.dataset.originId;
+    if (zan) {
+      api.IPostArticleMyUnCollect(id,{
+        originId: originId
+      })
+        .then(res => {
+          this.data.articleList.splice(index,1)
+          this.setData({
+            articleList: this.data.articleList
+          })
+          wx.showToast({
+            title: '取消收藏',
+          })
+        })
+        .catch(e => {
+
+        })
+    }
   }
 })

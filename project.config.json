@@ -11,7 +11,7 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.4.0",
+	"libVersion": "2.4.1",
 	"appid": "wx58cc31f7e8dea7d4",
 	"projectname": "wanandroid-mini",
 	"debugOptions": {

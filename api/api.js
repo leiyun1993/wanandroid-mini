@@ -61,4 +61,16 @@ export default {
     const result = baseAPI.request("/article/list/" + (page-1) + "/json?cid="+cid, params, "GET");
     return result;
   },
+  IPostCollect(id,params) {
+    const result = baseAPI.request("/lg/collect/"+id+"/json", params, "POST");
+    return result;
+  },
+  IPostArticleUnCollect(id,params) {
+    const result = baseAPI.request("/lg/uncollect_originId/"+id+"/json", params, "POST");
+    return result;
+  },
+  IPostArticleMyUnCollect(id, params) {
+    const result = baseAPI.request("/lg/uncollect/" + id + "/json", params, "POST");
+    return result;
+  },
 }

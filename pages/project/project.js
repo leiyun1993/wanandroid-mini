@@ -1,7 +1,7 @@
 // pages/project/project.js
 import projectConfig from "../../config/projects.js";
 import api from "../../api/api.js";
-
+const app = getApp();
 Page({
 
   /**
@@ -136,5 +136,45 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  collectClick(event) {
+    if (!app.isLogin()) {
+      wx.navigateTo({
+        url: '/pages/login/login',
+      })
+      return false;
+    }
+    let id = event.currentTarget.dataset.id;
+    let zan = event.currentTarget.dataset.zan;
+    let index = event.currentTarget.dataset.index;
+    if (!zan) {
+      api.IPostCollect(id)
+        .then(res => {
+          this.data.projectList[index].collect = true;
+          this.setData({
+            projectList: this.data.projectList
+          })
+          wx.showToast({
+            title: '收藏成功',
+          })
+        })
+        .catch(e => {
+
+        })
+    } else {
+      api.IPostArticleUnCollect(id)
+        .then(res => {
+          this.data.projectList[index].collect = false;
+          this.setData({
+            projectList: this.data.projectList
+          })
+          wx.showToast({
+            title: '取消收藏',
+          })
+        })
+        .catch(e => {
+
+        })
+    }
   }
 })

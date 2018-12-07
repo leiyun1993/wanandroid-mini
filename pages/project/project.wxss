@@ -117,6 +117,8 @@ display: flex;
 
 .project-box .icon {
   vertical-align: middle;
+   width: 32rpx;
+  height: 32rpx;
 }
 
 .project-box .time {

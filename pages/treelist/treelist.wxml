@@ -9,7 +9,7 @@
     <view class='title'>{{item.title}}</view>
     <view class='desc'>{{item.desc?item.desc:item.link}}</view>
     <view class='article-top' style='margin-top:20rpx;'>
-      <icon class='icon' type='success' size='22rpx' color='#666'></icon>
+      <image class='icon' src='{{item.collect? "../../images/ic_btn_collect.png":"../../images/ic_btn_collect_def.png"}}' data-id='{{item.id}}' data-zan='{{item.collect}}' data-index='{{index}}' catchtap='collectClick'></image>
       <view class='time'>{{item.niceDate}}</view>
     </view>
   </view>

@@ -20,7 +20,7 @@
       </view>
     </view>
     <view class='article-top'>
-      <icon class='icon' type='success' size='22rpx' color='#666'></icon>
+      <image class='icon' src='{{item.collect? "../../images/ic_btn_collect.png":"../../images/ic_btn_collect_def.png"}}' data-id='{{item.id}}' data-zan='{{item.collect}}' data-index='{{index}}' catchtap='collectClick'></image>
       <view class='type'>{{item.chapterName}}/{{item.superChapterName}}</view>
       <view class='time'>{{item.niceDate}}</view>
     </view>
