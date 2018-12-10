@@ -12,7 +12,7 @@ let request = (url, data, type) => new Promise((resolve, reject) => {
     success: function(res) {
       // success
       if (res.data.errorCode === 0) {
-        if (url == interfaces.INTERFACE_USER_LOGIN){
+        if (url == interfaces.INTERFACE_USER_LOGIN || url == interfaces.INTERFACE_REGISTER) {
           wx.setStorageSync("cookie", res.header['Set-Cookie'])
         }
         resolve(res.data);

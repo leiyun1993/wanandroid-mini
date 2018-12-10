@@ -4,4 +4,5 @@ export default{
   INTERFACE_USER_LOGIN:"/user/login",
   INTERFACE_HOT_KEY:"/hotkey/json",
   INTERFACE_TREE:"/tree/json",
+  INTERFACE_REGISTER:"/user/register",
 }

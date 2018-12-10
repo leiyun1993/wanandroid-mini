@@ -13,7 +13,8 @@
     "pages/todoadd/add",
     "pages/waterfall/index",
     "pages/tree/tree",
-    "pages/treelist/treelist"
+    "pages/treelist/treelist",
+    "pages/register/register"
   ],
   "window": {
     "backgroundTextStyle": "dark",

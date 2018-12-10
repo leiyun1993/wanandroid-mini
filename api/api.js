@@ -29,6 +29,10 @@ export default {
     const result = baseAPI.request(interfaces.INTERFACE_USER_LOGIN, params, "POST");
     return result;
   },
+  IPostUserRegister(params) {
+    const result = baseAPI.request(interfaces.INTERFACE_REGISTER, params, "POST");
+    return result;
+  },
   IGetArticleQuery(page,params) {
     const result = baseAPI.request("/article/query/" + (page - 1) + "/json", params, "POST");
     return result;

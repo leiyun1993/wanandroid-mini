@@ -1,4 +1,4 @@
-/* pages/login/login.wxss */
+/* pages/register/register.wxss */
 .login{
   text-align: center;
   margin-top: 30%;
